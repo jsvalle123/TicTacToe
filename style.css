@@ -1,0 +1,32 @@
+:root {
+    --box-size: 100px;
+    --color: #F76B4D;
+    --color-set: #FC2C00;
+    --l: 10px;
+}
+
+body {
+    margin: 0;
+}
+
+.board {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.box {
+    width: var(--box-size);
+    height: var(--box-size);
+    border: 1 px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
